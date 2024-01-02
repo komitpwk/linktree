@@ -89,10 +89,16 @@
             return false;
         }
 
+        let musicPlayed = false;
+
         document.addEventListener('click', function () {
-            const audio = new Audio('music.mp3');
-            audio.play();
+            if (!musicPlayed) {
+                const audio = new Audio('music.mp3');
+                audio.play();
+                musicPlayed = true;
+            }
         });
+
 
     </script>
     <script>
