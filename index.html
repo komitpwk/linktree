@@ -94,10 +94,12 @@
         document.addEventListener('click', function () {
             if (!musicPlayed) {
                 const audio = new Audio('music.mp3');
+                audio.loop = true;
                 audio.play();
                 musicPlayed = true;
             }
         });
+
 
 
     </script>
